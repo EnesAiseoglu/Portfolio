@@ -1437,3 +1437,148 @@ footer {
         transform: translateY(1px);
     }
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(13, 17, 23, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+        border-bottom: 1px solid rgba(0, 163, 255, 0.1);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav .menu-btn {
+        display: block;
+    }
+
+    /* Hero Section */
+    .hero-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    /* About Section */
+    .about .section-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .skill-card {
+        padding: 15px;
+    }
+
+    /* Contact Section */
+    .contact .section-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    /* Scroll to top button */
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .scroll-top-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .scroll-top-button i {
+        font-size: 20px;
+    }
+
+    .rocket-thrust {
+        bottom: -15px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Hero Section */
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    /* Section Headers */
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Form Elements */
+    input, textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer-content p {
+        font-size: 12px;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+}
